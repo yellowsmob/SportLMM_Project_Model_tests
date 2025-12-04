@@ -1,0 +1,58 @@
+experiment_id: "exp_002"
+date: "2024-12-04"
+author: "amira"
+
+model:
+  name: "qwen2.5:1.5b"
+  provider: "ollama" # Local deployment
+  version: "1.5B Q4_0 GGUF"
+  temperature: 0.1 # Low temperature for deterministic Cypher generation
+  max_tokens: 512
+  context_window: 2048
+
+codebase:
+  source: "custom" # Built from scratch using LangChain
+  version: "1.0.0"
+  framework: "langchain"
+  modifications: "Custom Graph RAG implementation using Neo4j and Ollama with French language support"
+
+data:
+  knowledge_graph: "neo4j_horse_training_performance"
+  language: "french"
+  testing: "custom_test_set_french_equestrian"
+  test_questions: 9 # Predefined questions about horse training analysis
+  description: "Knowledge graph for equestrian training performance analysis including horses, training sessions, exercises, physiological parameters, riders, and competitive events"
+
+graph_database:
+  type: "neo4j"
+  version: "5.x"
+  uri: "bolt://localhost:7687"
+  deployment: "local"
+
+parameters:
+  chunk_size: "N/A" # Direct graph queries, no chunking
+  overlap: "N/A"
+  retrieval_method: "cypher_generation" # LLM generates Cypher queries
+  prompt_language: "french"
+  cypher_language: "english" # Cypher syntax in English, data in French
+
+features:
+  - "Text-to-Cypher query generation"
+  - "Intermediate step visibility (generated queries + raw results)"
+  - "French natural language interface"
+  - "Local LLM deployment (no API costs)"
+  - "Interactive testing with manual validation"
+
+test_questions_domain: # did not work well :')
+  - "Horse training session participation"
+  - "High-intensity exercise identification"
+  - "Physiological parameter correlations"
+  - "Training data collection"
+  - "Competitive season events"
+  - "Training frequency analysis"
+  - "Horse-rider pairings"
+  - "Rankings and classifications"
+  - "Training stakeholders identification"
+  - "Horse breed information"
+
+notes: "First implementation of Graph RAG for French equestrian domain. Using lightweight Qwen2.5 1.5B model for cost-effective local deployment. Main challenge: ensuring model can generate valid Cypher queries despite small size. Future considerations: upgrade to 7B model if query generation quality is insufficient."

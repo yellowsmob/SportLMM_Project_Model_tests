@@ -1,0 +1,29 @@
+# Data files (if large)
+*.csv
+*.json
+*.parquet
+data/raw/*
+!data/raw/.gitkeep
+
+# Model checkpoints
+*.pt
+*.pth
+*.bin
+models/
+
+# Results
+results/*.png
+results/*.pkl
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.env
+
+# Logs
+*.log
+logs/
+
+# Keep structure
+!.gitkeep
