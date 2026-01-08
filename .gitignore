@@ -27,3 +27,5 @@ logs/
 
 # Keep structure
 !.gitkeep
+
+.DS_Store
