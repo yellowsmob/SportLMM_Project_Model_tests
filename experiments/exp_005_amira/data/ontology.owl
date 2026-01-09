@@ -1,0 +1,1531 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#"
+     xml:base="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Horses="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#AssociatedWith -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#AssociatedWith">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#CompetesIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#CompetesIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#TrainsIn -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#TrainsIn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#dependsOn -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#dependsOn">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasParticipatedTo -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasParticipatedTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#dependsOn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasThematique -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasThematique">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Topic"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#isAttachedTo -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#isAttachedTo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Horse"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#isUsedFor -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#isUsedFor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#TrainsIn"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#ExperimentalDevices"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#ExperimentalObjectif"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Frequency -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Frequency">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#TrainingProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#HealthProperty -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#HealthProperty"/>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#HorseProperty -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#HorseProperty">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#ImageName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#ImageName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#ImageProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#ImageProperty -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#ImageProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Images"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Intensity -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Intensity">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#TrainingProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#SensorsProperty -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#SensorsProperty"/>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#TrainingProperty -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#TrainingProperty"/>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Volume -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Volume">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#TrainingProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasCamView -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasCamView">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#ImageProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasDate -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#ImageProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasFileSize -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasFileSize">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#SensorsProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#InertialSensors"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasFormat -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasFormat">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#SensorsProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#InertialSensors"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasHeight -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasHeight">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#HorseProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasLocation -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasLocation">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#ImageProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasName -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#HorseProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasPuce -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasPuce">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#HorseProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Horse"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasRace -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasRace">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#HorseProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Horse"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasRobe -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasRobe">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#HorseProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasSensorID -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasSensorID">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#SensorsProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#InertialSensors"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasSensorOffset -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasSensorOffset">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#SensorsProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#InertialSensors"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasSensorTime -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasSensorTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#SensorsProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#InertialSensors"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasSire -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasSire">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#HorseProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasTimestamp -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasTimestamp">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#ImageProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasVideofile -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasVideofile">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#ImageProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasWeight -->
+
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasWeight">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#HorseProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#AbreuvementAdapté -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#AbreuvementAdapté">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Alimentation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Acceleration -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Acceleration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#SensorMeasurements"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Alimentation -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Alimentation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#IndicateurBienetre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#AlimentationAdaptée -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#AlimentationAdaptée">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Alimentation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#AngleSwing -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#AngleSwing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#SensorMeasurements"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#AngleTwist -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#AngleTwist">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#SensorMeasurements"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#AngleVertical -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#AngleVertical">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#SensorMeasurements"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#AnimalPoseEstimation -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#AnimalPoseEstimation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#ExperimentalObjectif"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasThematique"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#HorseRiding"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasThematique"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#WellBeing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Asymetric -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Asymetric">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Gait"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#BienetreSaumur -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#BienetreSaumur">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Studies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#BienetreSociale -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#BienetreSociale">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Studies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#BonneRelationAnimal -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#BonneRelationAnimal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Compertement"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#ContactsSociaux"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Breeding -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Breeding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Topic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#CalculationMethods -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#CalculationMethods"/>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Camera -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Camera">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#ExperimentalDevices"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#isUsedFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#AnimalPoseEstimation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#CanonOfForelimb -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#CanonOfForelimb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#SensorsPosition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#CanonOfHindlimb -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#CanonOfHindlimb">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#SensorsPosition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Caretaker -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Caretaker">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Human"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#CognitionEquine -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#CognitionEquine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Studies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Compertement -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Compertement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#IndicateurBienetre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#CompetitionStage -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#CompetitionStage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Training"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#ConfortRepos -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#ConfortRepos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Heberegement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#ConfortThermique -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#ConfortThermique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Heberegement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#ContactsSociaux -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#ContactsSociaux">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Compertement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Cross -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Cross">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#SportingEvent"/>
+        <rdfs:label>Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#DeveloppementPoulain -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#DeveloppementPoulain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Studies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#DimensionBox -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#DimensionBox">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#ConfortRepos"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Propreté"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#DistanceEvitement -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#DistanceEvitement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#BonneRelationAnimal"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#TypeApproche"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Dressage -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Dressage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#SportingEvent"/>
+        <rdfs:label>Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#DuréeDeLiberté -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#DuréeDeLiberté">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#FacilitéDuMouvement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Economy -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Economy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Topic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#ExperimentalDevices -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#ExperimentalDevices">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#isAttachedTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Horse"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#isUsedFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#ExperimentalObjectif"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#ExperimentalObjectif -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#ExperimentalObjectif">
+        <rdfs:label>Project</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#FacilitéDuMouvement -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#FacilitéDuMouvement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Heberegement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#FacteurMental -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#FacteurMental">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#IndicateurPerformance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#FacteurPhysique -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#FacteurPhysique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#IndicateurPerformance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#FacteurSocial -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#FacteurSocial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#IndicateurPerformance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#FacteurTechnicoTactique -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#FacteurTechnicoTactique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#IndicateurPerformance"/>
+        <rdfs:comment>L&apos;analyse en temps réel d&apos;une situation, ainsi que la mise en place d&apos;une stratégie et avoir une connaissance aigue du réglement et des concurrents</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#FacteurTechnique -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#FacteurTechnique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#IndicateurPerformance"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#FatigueDetection -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#FatigueDetection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#ExperimentalObjectif"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasThematique"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Locomotion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasThematique"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#WellBeing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Forehead -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Forehead">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#SensorsPosition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#FréquencedeLiberté -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#FréquencedeLiberté">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#FacilitéDuMouvement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Gait -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Gait">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#GaitClassifaction"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Indicators"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#GaitClassifaction -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#GaitClassifaction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#ExperimentalObjectif"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasThematique"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Locomotion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Gyroscope -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Gyroscope">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#SensorMeasurements"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#HappyAthlete -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#HappyAthlete">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Studies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Health -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Health">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Topic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#HealthStatus -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#HealthStatus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#IndicateurBienetre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Heartrate -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Heartrate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#PhysiologicalIndicators"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Heberegement -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Heberegement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#IndicateurBienetre"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Horse -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Horse">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#CompetesIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#SportingEvent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#TrainsIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Training"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#HorseRiding -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#HorseRiding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Topic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Human -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Human"/>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#IGGDOP -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#IGGDOP">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Studies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Images -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Images">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Camera"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#IndicateurBienetre -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#IndicateurBienetre">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Indicators"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#IndicateurPerformance -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#IndicateurPerformance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Indicators"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Indicators -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Indicators">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#FatigueDetection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#InertialSensors -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#InertialSensors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#ExperimentalDevices"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#isUsedFor"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#GaitClassifaction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#KinematicIndiactors -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#KinematicIndiactors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Indicators"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#PhysiologicalIndicators"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Lifes -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Lifes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Studies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Locomotion -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Locomotion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#HorseRiding"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Morphometrie -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Morphometrie">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#CalculationMethods"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasThematique"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Breeding"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasThematique"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Locomotion"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#PearsonCorreletionCoefficent -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#PearsonCorreletionCoefficent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#KinematicIndiactors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#PhysiologicalIndicators -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#PhysiologicalIndicators">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Indicators"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Pool -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Pool">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#SensorsPosition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#PreCompetitionStage -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#PreCompetitionStage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Training"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#PreparationStage -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#PreparationStage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Training"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#PresicisionTechnique -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#PresicisionTechnique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#FacteurTechnique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Propreté -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Propreté">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#ConfortRepos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#QualiteDeplacement -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#QualiteDeplacement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#FacteurTechnique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#QualiteGeste -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#QualiteGeste">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#FacteurTechnique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#RaceAndCare -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#RaceAndCare">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Studies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Rider -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Rider">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Human"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#AssociatedWith"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Horse"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#RootMeanSquareDeviation -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#RootMeanSquareDeviation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#KinematicIndiactors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#SafeFarrier -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#SafeFarrier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Studies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Scarum -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Scarum">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#SensorsPosition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#SensorMeasurements -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#SensorMeasurements">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#InertialSensors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#SensorsPosition -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#SensorsPosition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#InertialSensors"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#SevrageEnPratique -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#SevrageEnPratique">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Studies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#ShowJumping -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#ShowJumping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#SportingEvent"/>
+        <rdfs:label>Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#SoundOfWelfare -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#SoundOfWelfare">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Studies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#SportingEvent -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#SportingEvent">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#TrainsIn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Training"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasThematique"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#HorseRiding"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasThematique"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#IndicateurPerformance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Sternum -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Sternum">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#SensorsPosition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Studies -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Studies">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#WellBeing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Symetric -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Symetric">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Gait"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Topic -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Topic">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#hasThematique"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Topic"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Training -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Training">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#dependsOn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#SportingEvent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#TransitionStage -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#TransitionStage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Training"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#TypeApproche -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#TypeApproche">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#BonneRelationAnimal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#VarieteMouvement -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#VarieteMouvement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#FacteurTechnique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Veterinarian -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Veterinarian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Human"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Video -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Video">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Camera"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#VitesseExécution -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#VitesseExécution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#FacteurTechnique"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#WellBeing -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#WellBeing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Topic"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Withers -->
+
+
+    <owl:Class rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Withers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#SensorsPosition"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#DetectionFatigue1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#DetectionFatigue1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#FatigueDetection"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Horse1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Horse1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Horse"/>
+        <hasName>Dakota</hasName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Sensor1 -->
+
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Sensor1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#InertialSensors"/>
+        <hasSensorID>SI-001523</hasSensorID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Alimentation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Compertement"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#HealthStatus"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Heberegement"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Alimentation"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#HealthStatus"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Heberegement"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#BienetreSaumur"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#BienetreSociale"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#CognitionEquine"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#DeveloppementPoulain"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#HappyAthlete"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#IGGDOP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#IndicateurBienetre"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Lifes"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#RaceAndCare"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#SafeFarrier"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#SevrageEnPratique"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#SoundOfWelfare"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#BienetreSaumur"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#BienetreSociale"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#CognitionEquine"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#DeveloppementPoulain"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#HappyAthlete"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#IGGDOP"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Lifes"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#RaceAndCare"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#SafeFarrier"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#SevrageEnPratique"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#SoundOfWelfare"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Breeding"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Economy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Health"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#HorseRiding"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#WellBeing"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#CanonOfForelimb"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#CanonOfHindlimb"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Forehead"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Pool"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Scarum"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Sternum"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Withers"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Caretaker"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Rider"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Veterinarian"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#CompetitionStage"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#PreCompetitionStage"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#PreparationStage"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#TransitionStage"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#ConfortRepos"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#ConfortThermique"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#FacilitéDuMouvement"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Cross"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Dressage"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#ShowJumping"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#FacteurMental"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#FacteurPhysique"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#FacteurSocial"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#FacteurTechnicoTactique"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#FacteurTechnique"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#PresicisionTechnique"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#QualiteDeplacement"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#QualiteGeste"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#VarieteMouvement"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#VitesseExécution"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#"
+     xml:base="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Horses="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#">
+
+    <owl:Ontology rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses"/>
+
+    <!-- ========================= -->
+    <!--        EVENTS             -->
+    <!-- ========================= -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Event_SJ_2026_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#ShowJumping"/>
+        <!-- Optional explicit thematique links (fits your SportEvent restrictions) -->
+        <hasThematique rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#HorseRiding"/>
+        <hasThematique rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#IndicateurPerformance"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Event_Dressage_2026_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Dressage"/>
+        <hasThematique rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#HorseRiding"/>
+        <hasThematique rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#IndicateurPerformance"/>
+    </owl:NamedIndividual>
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Event_Cross_2026_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Cross"/>
+        <hasThematique rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#HorseRiding"/>
+        <hasThematique rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#IndicateurPerformance"/>
+    </owl:NamedIndividual>
+
+    <!-- ========================= -->
+    <!--        TRAINING           -->
+    <!-- ========================= -->
+
+    <!-- Preparation stage for show jumping -->
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Training_Preparation_SJ_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#PreparationStage"/>
+        <dependsOn rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Event_SJ_2026_01"/>
+
+        <Frequency rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</Frequency>
+        <Intensity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Moderate</Intensity>
+        <Volume rdf:datatype="http://www.w3.org/2001/XMLSchema#string">45min</Volume>
+    </owl:NamedIndividual>
+
+    <!-- Pre-competition stage for show jumping -->
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Training_PreCompetition_SJ_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#PreCompetitionStage"/>
+        <dependsOn rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Event_SJ_2026_01"/>
+
+        <Frequency rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</Frequency>
+        <Intensity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">High</Intensity>
+        <Volume rdf:datatype="http://www.w3.org/2001/XMLSchema#string">60min</Volume>
+    </owl:NamedIndividual>
+
+    <!-- Competition stage (during the event window) -->
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Training_Competition_SJ_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#CompetitionStage"/>
+        <dependsOn rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Event_SJ_2026_01"/>
+        <!-- If you want to explicitly say the horse already participated -->
+        <hasParticipatedTo rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Event_SJ_2026_01"/>
+
+        <Frequency rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</Frequency>
+        <Intensity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peak</Intensity>
+        <Volume rdf:datatype="http://www.w3.org/2001/XMLSchema#string">30min</Volume>
+    </owl:NamedIndividual>
+
+    <!-- Transition stage (recovery after event) -->
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Training_Transition_SJ_01">
+        <rdf:type rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#TransitionStage"/>
+        <dependsOn rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Event_SJ_2026_01"/>
+
+        <Frequency rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</Frequency>
+        <Intensity rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Low</Intensity>
+        <Volume rdf:datatype="http://www.w3.org/2001/XMLSchema#string">30min</Volume>
+    </owl:NamedIndividual>
+
+    <!-- ========================= -->
+    <!--        HORSE              -->
+    <!-- ========================= -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Horse1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Horse"/>
+        <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dakota</hasName>
+
+        <!-- Competitions -->
+        <CompetesIn rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Event_SJ_2026_01"/>
+        <CompetesIn rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Event_Dressage_2026_01"/>
+        <CompetesIn rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Event_Cross_2026_01"/>
+
+        <!-- Training plan linked to the key target event (show jumping here) -->
+        <TrainsIn rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Training_Preparation_SJ_01"/>
+        <TrainsIn rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Training_PreCompetition_SJ_01"/>
+        <TrainsIn rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Training_Competition_SJ_01"/>
+        <TrainsIn rdf:resource="http://www.semanticweb.org/noamaadra/ontologies/2024/2/Horses#Training_Transition_SJ_01"/>
+    </owl:NamedIndividual>
+
+</rdf:RDF>
