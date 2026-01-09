@@ -28,4 +28,5 @@ logs/
 # Keep structure
 !.gitkeep
 
-.DS_Store
+.DS_Store*.gguf
+experiments/**/models/
